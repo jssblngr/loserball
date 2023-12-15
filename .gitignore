@@ -72,3 +72,6 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+Intermediate/CachedAssetRegistry_0.bin
+Intermediate/ShaderAutogen/PCD3D_SM5/AutogenShaderHeaders.ush
+Intermediate/ShaderAutogen/PCD3D_SM6/AutogenShaderHeaders.ush
