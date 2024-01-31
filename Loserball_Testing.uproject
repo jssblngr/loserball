@@ -12,15 +12,26 @@
 			]
 		},
 		{
-			"Name": "OnlineSubsystemEOS",
-			"Enabled": true
+			"Name": "OnlineSubsystemNull",
+			"Enabled": false
 		},
 		{
-			"Name": "OnlineServicesEOS",
-			"Enabled": true
+			"Name": "OnlineSubsystemIOS",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"IOS",
+				"TVOS"
+			]
 		},
 		{
-			"Name": "OnlineServicesEOSGS",
+			"Name": "OnlineSubsystemGooglePlay",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Android"
+			]
+		},
+		{
+			"Name": "OnlineSubsystemSteam",
 			"Enabled": true
 		}
 	],
