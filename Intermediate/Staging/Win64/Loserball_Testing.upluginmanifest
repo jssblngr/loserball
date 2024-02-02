@@ -1,6 +1,84 @@
 {
 	"Contents": [
 		{
+			"File": "../../../Loserball_Testing/Plugins/AdvancedSessions/AdvancedSessions.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 0,
+				"VersionName": "5.1",
+				"FriendlyName": "Advanced Sessions",
+				"Description": "Adds new blueprint functions to handle more advanced session operations.",
+				"Category": "Advanced Sessions Plugin",
+				"CreatedBy": "Joshua Statzer",
+				"CreatedByURL": "N/A",
+				"DocsURL": "",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"CanContainContent": false,
+				"Modules": [
+					{
+						"Name": "AdvancedSessions",
+						"Type": "Runtime",
+						"LoadingPhase": "PreDefault"
+					}
+				],
+				"Plugins": [
+					{
+						"Name": "OnlineSubsystem",
+						"Enabled": true
+					},
+					{
+						"Name": "OnlineSubsystemUtils",
+						"Enabled": true
+					}
+				]
+			}
+		},
+		{
+			"File": "../../../Loserball_Testing/Plugins/AdvancedSteamSessions/AdvancedSteamSessions.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 0,
+				"VersionName": "5.1",
+				"FriendlyName": "Advanced Steam Sessions",
+				"Description": "Adds new blueprint functions to handle more advanced session operations in Steam. REQUIRES ADVANCED SESSIONS",
+				"Category": "Advanced Sessions Plugin",
+				"CreatedBy": "Joshua Statzer",
+				"CreatedByURL": "N/A",
+				"DocsURL": "",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"CanContainContent": false,
+				"Modules": [
+					{
+						"Name": "AdvancedSteamSessions",
+						"Type": "Runtime",
+						"LoadingPhase": "Default"
+					}
+				],
+				"Plugins": [
+					{
+						"Name": "AdvancedSessions",
+						"Enabled": true
+					},
+					{
+						"Name": "OnlineSubsystem",
+						"Enabled": true
+					},
+					{
+						"Name": "OnlineSubsystemUtils",
+						"Enabled": true
+					},
+					{
+						"Name": "SteamShared",
+						"Enabled": true
+					}
+				]
+			}
+		},
+		{
 			"File": "../../../Engine/Plugins/2D/Paper2D/Paper2D.uplugin",
 			"Descriptor": 
 			{
@@ -169,6 +247,40 @@
 			}
 		},
 		{
+			"File": "../../../Engine/Plugins/Animation/ControlRigSpline/ControlRigSpline.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 1,
+				"VersionName": "1.0",
+				"FriendlyName": "Control Rig Spline",
+				"Description": "Allows creation and use of splines for Control Rig",
+				"Category": "Animation",
+				"CreatedBy": "Epic Games, Inc.",
+				"CreatedByURL": "https://epicgames.com",
+				"DocsURL": "",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"EnabledByDefault": true,
+				"CanContainContent": true,
+				"IsBetaVersion": true,
+				"IsExperimentalVersion": true,
+				"Modules": [
+					{
+						"Name": "ControlRigSpline",
+						"Type": "Runtime",
+						"LoadingPhase": "Default"
+					}
+				],
+				"Plugins": [
+					{
+						"Name": "ControlRig",
+						"Enabled": true
+					}
+				]
+			}
+		},
+		{
 			"File": "../../../Engine/Plugins/Animation/ControlRig/ControlRig.uplugin",
 			"Descriptor": 
 			{
@@ -230,40 +342,6 @@
 			}
 		},
 		{
-			"File": "../../../Engine/Plugins/Animation/ControlRigSpline/ControlRigSpline.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 1,
-				"VersionName": "1.0",
-				"FriendlyName": "Control Rig Spline",
-				"Description": "Allows creation and use of splines for Control Rig",
-				"Category": "Animation",
-				"CreatedBy": "Epic Games, Inc.",
-				"CreatedByURL": "https://epicgames.com",
-				"DocsURL": "",
-				"MarketplaceURL": "",
-				"SupportURL": "",
-				"EnabledByDefault": true,
-				"CanContainContent": true,
-				"IsBetaVersion": true,
-				"IsExperimentalVersion": true,
-				"Modules": [
-					{
-						"Name": "ControlRigSpline",
-						"Type": "Runtime",
-						"LoadingPhase": "Default"
-					}
-				],
-				"Plugins": [
-					{
-						"Name": "ControlRig",
-						"Enabled": true
-					}
-				]
-			}
-		},
-		{
 			"File": "../../../Engine/Plugins/Animation/IKRig/IKRig.uplugin",
 			"Descriptor": 
 			{
@@ -304,6 +382,59 @@
 					},
 					{
 						"Name": "FullBodyIK",
+						"Enabled": true
+					}
+				]
+			}
+		},
+		{
+			"File": "../../../Engine/Plugins/Bridge/Bridge.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 23,
+				"VersionName": "2023.0.7",
+				"FriendlyName": "Bridge",
+				"Description": "Megascans Link for Quixel Bridge.",
+				"Category": "Editor",
+				"CreatedBy": "Quixel",
+				"CreatedByURL": "https://www.quixel.se",
+				"DocsURL": "https://help.quixel.com/hc/en-us/sections/360005846137-Quixel-Bridge-for-Unreal-Engine-5",
+				"MarketplaceURL": "",
+				"SupportURL": "support@quixel.com",
+				"EngineVersion": "5.3.0",
+				"EnabledByDefault": true,
+				"CanContainContent": true,
+				"SupportedTargetPlatforms": [
+					"Win64",
+					"Mac",
+					"Linux"
+				],
+				"Modules": [
+					{
+						"Name": "Bridge",
+						"Type": "Editor",
+						"LoadingPhase": "PostDefault",
+						"PlatformAllowList": [
+							"Win64",
+							"Mac",
+							"Linux"
+						]
+					},
+					{
+						"Name": "MegascansPlugin",
+						"Type": "Editor",
+						"LoadingPhase": "PostDefault",
+						"PlatformAllowList": [
+							"Win64",
+							"Mac",
+							"Linux"
+						]
+					}
+				],
+				"Plugins": [
+					{
+						"Name": "EditorScriptingUtilities",
 						"Enabled": true
 					}
 				]
@@ -1029,6 +1160,38 @@
 			}
 		},
 		{
+			"File": "../../../Engine/Plugins/Enterprise/VariantManagerContent/VariantManagerContent.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 1,
+				"VersionName": "1.0",
+				"FriendlyName": "Variant Manager Content",
+				"Description": "Data classes and assets for the Variant Manager plugin",
+				"Category": "Editor",
+				"CreatedBy": "Epic Games, Inc.",
+				"CreatedByURL": "https://epicgames.com",
+				"DocsURL": "https://docs.unrealengine.com/en-US/WorkingWithContent/Importing/Datasmith/",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"EnabledByDefault": true,
+				"CanContainContent": false,
+				"IsBetaVersion": true,
+				"Modules": [
+					{
+						"Name": "VariantManagerContent",
+						"Type": "Runtime",
+						"LoadingPhase": "PostConfigInit"
+					},
+					{
+						"Name": "VariantManagerContentEditor",
+						"Type": "Editor",
+						"LoadingPhase": "Default"
+					}
+				]
+			}
+		},
+		{
 			"File": "../../../Engine/Plugins/Enterprise/VariantManager/VariantManager.uplugin",
 			"Descriptor": 
 			{
@@ -1057,38 +1220,6 @@
 					{
 						"Name": "VariantManagerContent",
 						"Enabled": true
-					}
-				]
-			}
-		},
-		{
-			"File": "../../../Engine/Plugins/Enterprise/VariantManagerContent/VariantManagerContent.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 1,
-				"VersionName": "1.0",
-				"FriendlyName": "Variant Manager Content",
-				"Description": "Data classes and assets for the Variant Manager plugin",
-				"Category": "Editor",
-				"CreatedBy": "Epic Games, Inc.",
-				"CreatedByURL": "https://epicgames.com",
-				"DocsURL": "https://docs.unrealengine.com/en-US/WorkingWithContent/Importing/Datasmith/",
-				"MarketplaceURL": "",
-				"SupportURL": "",
-				"EnabledByDefault": true,
-				"CanContainContent": false,
-				"IsBetaVersion": true,
-				"Modules": [
-					{
-						"Name": "VariantManagerContent",
-						"Type": "Runtime",
-						"LoadingPhase": "PostConfigInit"
-					},
-					{
-						"Name": "VariantManagerContentEditor",
-						"Type": "Editor",
-						"LoadingPhase": "Default"
 					}
 				]
 			}
@@ -1191,38 +1322,6 @@
 			}
 		},
 		{
-			"File": "../../../Engine/Plugins/Experimental/ChaosCloth/ChaosCloth.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 1,
-				"VersionName": "1.0",
-				"FriendlyName": "Chaos Cloth",
-				"Description": "Adds Chaos Cloth Module.",
-				"Category": "Physics",
-				"CreatedBy": "Epic Games, Inc.",
-				"CreatedByURL": "https://epicgames.com",
-				"DocsURL": "",
-				"MarketplaceURL": "",
-				"SupportURL": "",
-				"EnabledByDefault": true,
-				"CanContainContent": false,
-				"Modules": [
-					{
-						"Name": "ChaosCloth",
-						"Type": "Runtime",
-						"LoadingPhase": "PostConfigInit"
-					}
-				],
-				"Plugins": [
-					{
-						"Name": "ChaosCaching",
-						"Enabled": true
-					}
-				]
-			}
-		},
-		{
 			"File": "../../../Engine/Plugins/Experimental/ChaosClothEditor/ChaosClothEditor.uplugin",
 			"Descriptor": 
 			{
@@ -1249,6 +1348,38 @@
 				"Plugins": [
 					{
 						"Name": "ChaosCloth",
+						"Enabled": true
+					}
+				]
+			}
+		},
+		{
+			"File": "../../../Engine/Plugins/Experimental/ChaosCloth/ChaosCloth.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 1,
+				"VersionName": "1.0",
+				"FriendlyName": "Chaos Cloth",
+				"Description": "Adds Chaos Cloth Module.",
+				"Category": "Physics",
+				"CreatedBy": "Epic Games, Inc.",
+				"CreatedByURL": "https://epicgames.com",
+				"DocsURL": "",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"EnabledByDefault": true,
+				"CanContainContent": false,
+				"Modules": [
+					{
+						"Name": "ChaosCloth",
+						"Type": "Runtime",
+						"LoadingPhase": "PostConfigInit"
+					}
+				],
+				"Plugins": [
+					{
+						"Name": "ChaosCaching",
 						"Enabled": true
 					}
 				]
@@ -2865,44 +2996,6 @@
 			}
 		},
 		{
-			"File": "../../../Engine/Plugins/Online/OnlineSubsystem/OnlineSubsystem.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 1,
-				"VersionName": "1.0",
-				"FriendlyName": "Online Subsystem",
-				"Description": "Shared code for interacting online subsystem implementations.",
-				"Category": "Online Platform",
-				"CreatedBy": "Epic Games, Inc.",
-				"CreatedByURL": "https://epicgames.com",
-				"DocsURL": "",
-				"MarketplaceURL": "",
-				"SupportURL": "",
-				"EnabledByDefault": true,
-				"CanContainContent": false,
-				"Modules": [
-					{
-						"Name": "OnlineSubsystem",
-						"Type": "Runtime",
-						"LoadingPhase": "PostConfigInit"
-					}
-				],
-				"LocalizationTargets": [
-					{
-						"Name": "OnlineSubsystem",
-						"LoadingPolicy": "Always"
-					}
-				],
-				"Plugins": [
-					{
-						"Name": "OnlineBase",
-						"Enabled": true
-					}
-				]
-			}
-		},
-		{
 			"File": "../../../Engine/Plugins/Online/OnlineSubsystemNull/OnlineSubsystemNull.uplugin",
 			"Descriptor": 
 			{
@@ -2933,6 +3026,57 @@
 					},
 					{
 						"Name": "OnlineSubsystemUtils",
+						"Enabled": true
+					}
+				]
+			}
+		},
+		{
+			"File": "../../../Engine/Plugins/Online/OnlineSubsystemSteam/OnlineSubsystemSteam.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 0,
+				"VersionName": "1.1",
+				"FriendlyName": "Online Subsystem Steam",
+				"Description": "Access to Steam platform",
+				"Category": "Online Platform",
+				"CreatedBy": "Epic Games, Inc.",
+				"CreatedByURL": "https://epicgames.com",
+				"DocsURL": "",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"EnabledByDefault": false,
+				"CanContainContent": false,
+				"Modules": [
+					{
+						"Name": "OnlineSubsystemSteam",
+						"Type": "Runtime",
+						"LoadingPhase": "Default",
+						"PlatformAllowList": [
+							"Win64",
+							"Mac",
+							"Linux"
+						]
+					}
+				],
+				"LocalizationTargets": [
+					{
+						"Name": "OnlineSubsystemSteam",
+						"LoadingPolicy": "Always"
+					}
+				],
+				"Plugins": [
+					{
+						"Name": "OnlineSubsystem",
+						"Enabled": true
+					},
+					{
+						"Name": "OnlineSubsystemUtils",
+						"Enabled": true
+					},
+					{
+						"Name": "SteamShared",
 						"Enabled": true
 					}
 				]
@@ -2980,6 +3124,44 @@
 					},
 					{
 						"Name": "OnlineServices",
+						"Enabled": true
+					}
+				]
+			}
+		},
+		{
+			"File": "../../../Engine/Plugins/Online/OnlineSubsystem/OnlineSubsystem.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 1,
+				"VersionName": "1.0",
+				"FriendlyName": "Online Subsystem",
+				"Description": "Shared code for interacting online subsystem implementations.",
+				"Category": "Online Platform",
+				"CreatedBy": "Epic Games, Inc.",
+				"CreatedByURL": "https://epicgames.com",
+				"DocsURL": "",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"EnabledByDefault": true,
+				"CanContainContent": false,
+				"Modules": [
+					{
+						"Name": "OnlineSubsystem",
+						"Type": "Runtime",
+						"LoadingPhase": "PostConfigInit"
+					}
+				],
+				"LocalizationTargets": [
+					{
+						"Name": "OnlineSubsystem",
+						"LoadingPolicy": "Always"
+					}
+				],
+				"Plugins": [
+					{
+						"Name": "OnlineBase",
 						"Enabled": true
 					}
 				]
@@ -3947,6 +4129,37 @@
 						"Name": "SoundFields",
 						"Type": "Runtime",
 						"LoadingPhase": "PreDefault"
+					}
+				]
+			}
+		},
+		{
+			"File": "../../../Engine/Plugins/Runtime/Steam/SteamShared/SteamShared.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 1,
+				"VersionName": "1.0",
+				"FriendlyName": "Steam Shared Module",
+				"Description": "Shared module loader for the Steam API",
+				"Category": "Online Platform",
+				"CreatedBy": "Epic Games, Inc.",
+				"CreatedByURL": "https://epicgames.com",
+				"DocsURL": "",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"EnabledByDefault": false,
+				"CanContainContent": false,
+				"Modules": [
+					{
+						"Name": "SteamShared",
+						"Type": "Runtime",
+						"LoadingPhase": "PreDefault",
+						"PlatformAllowList": [
+							"Win64",
+							"Mac",
+							"Linux"
+						]
 					}
 				]
 			}
