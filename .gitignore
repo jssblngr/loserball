@@ -79,3 +79,5 @@ Intermediate/CachedAssetRegistry_0.bin
 Intermediate/CachedAssetRegistry_0.bin
 Build/Windows/FileOpenOrder/EditorOpenOrder.log
 Build/Windows/FileOpenOrder/CookerOpenOrder.log
+*.log
+Intermediate/CachedAssetRegistry_0.bin
