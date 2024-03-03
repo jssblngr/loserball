@@ -1,10 +1,10 @@
 {
 	"SourceFiles": [
-		"C:\\Users\\joshu\\Documents\\Unreal Projects\\loserball\\loserball\\Source\\Loserball_Testing\\Loserball_Testing.Build.cs",
-		"C:\\Users\\joshu\\Documents\\Unreal Projects\\loserball\\loserball\\Plugins\\AdvancedSessions\\Source\\AdvancedSessions\\AdvancedSessions.Build.cs",
-		"C:\\Users\\joshu\\Documents\\Unreal Projects\\loserball\\loserball\\Plugins\\AdvancedSteamSessions\\Source\\AdvancedSteamSessions\\AdvancedSteamSessions.Build.cs",
-		"C:\\Users\\joshu\\Documents\\Unreal Projects\\loserball\\loserball\\Source\\Loserball_Testing.Target.cs",
-		"C:\\Users\\joshu\\Documents\\Unreal Projects\\loserball\\loserball\\Source\\Loserball_TestingEditor.Target.cs"
+		"M:\\UnrealProjects\\loserball\\Source\\Loserball_Testing\\Loserball_Testing.Build.cs",
+		"M:\\UnrealProjects\\loserball\\Plugins\\AdvancedSessions\\Source\\AdvancedSessions\\AdvancedSessions.Build.cs",
+		"M:\\UnrealProjects\\loserball\\Plugins\\AdvancedSteamSessions\\Source\\AdvancedSteamSessions\\AdvancedSteamSessions.Build.cs",
+		"M:\\UnrealProjects\\loserball\\Source\\Loserball_Testing.Target.cs",
+		"M:\\UnrealProjects\\loserball\\Source\\Loserball_TestingEditor.Target.cs"
 	],
 	"EngineVersion": "5.3.2"
 }
