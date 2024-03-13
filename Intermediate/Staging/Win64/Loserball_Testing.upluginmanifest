@@ -1,6 +1,84 @@
 {
 	"Contents": [
 		{
+			"File": "../../../Loserball_Testing/Plugins/AdvancedSessions/AdvancedSessions.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 0,
+				"VersionName": "5.1",
+				"FriendlyName": "Advanced Sessions",
+				"Description": "Adds new blueprint functions to handle more advanced session operations.",
+				"Category": "Advanced Sessions Plugin",
+				"CreatedBy": "Joshua Statzer",
+				"CreatedByURL": "N/A",
+				"DocsURL": "",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"CanContainContent": false,
+				"Modules": [
+					{
+						"Name": "AdvancedSessions",
+						"Type": "Runtime",
+						"LoadingPhase": "PreDefault"
+					}
+				],
+				"Plugins": [
+					{
+						"Name": "OnlineSubsystem",
+						"Enabled": true
+					},
+					{
+						"Name": "OnlineSubsystemUtils",
+						"Enabled": true
+					}
+				]
+			}
+		},
+		{
+			"File": "../../../Loserball_Testing/Plugins/AdvancedSteamSessions/AdvancedSteamSessions.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 0,
+				"VersionName": "5.1",
+				"FriendlyName": "Advanced Steam Sessions",
+				"Description": "Adds new blueprint functions to handle more advanced session operations in Steam. REQUIRES ADVANCED SESSIONS",
+				"Category": "Advanced Sessions Plugin",
+				"CreatedBy": "Joshua Statzer",
+				"CreatedByURL": "N/A",
+				"DocsURL": "",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"CanContainContent": false,
+				"Modules": [
+					{
+						"Name": "AdvancedSteamSessions",
+						"Type": "Runtime",
+						"LoadingPhase": "Default"
+					}
+				],
+				"Plugins": [
+					{
+						"Name": "AdvancedSessions",
+						"Enabled": true
+					},
+					{
+						"Name": "OnlineSubsystem",
+						"Enabled": true
+					},
+					{
+						"Name": "OnlineSubsystemUtils",
+						"Enabled": true
+					},
+					{
+						"Name": "SteamShared",
+						"Enabled": true
+					}
+				]
+			}
+		},
+		{
 			"File": "../../../Engine/Plugins/2D/Paper2D/Paper2D.uplugin",
 			"Descriptor": 
 			{
@@ -4391,84 +4469,6 @@
 					},
 					{
 						"Name": "LevelSequenceEditor",
-						"Enabled": true
-					}
-				]
-			}
-		},
-		{
-			"File": "../../../Loserball_Testing/Plugins/AdvancedSessions/AdvancedSessions.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 0,
-				"VersionName": "5.1",
-				"FriendlyName": "Advanced Sessions",
-				"Description": "Adds new blueprint functions to handle more advanced session operations.",
-				"Category": "Advanced Sessions Plugin",
-				"CreatedBy": "Joshua Statzer",
-				"CreatedByURL": "N/A",
-				"DocsURL": "",
-				"MarketplaceURL": "",
-				"SupportURL": "",
-				"CanContainContent": false,
-				"Modules": [
-					{
-						"Name": "AdvancedSessions",
-						"Type": "Runtime",
-						"LoadingPhase": "PreDefault"
-					}
-				],
-				"Plugins": [
-					{
-						"Name": "OnlineSubsystem",
-						"Enabled": true
-					},
-					{
-						"Name": "OnlineSubsystemUtils",
-						"Enabled": true
-					}
-				]
-			}
-		},
-		{
-			"File": "../../../Loserball_Testing/Plugins/AdvancedSteamSessions/AdvancedSteamSessions.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 0,
-				"VersionName": "5.1",
-				"FriendlyName": "Advanced Steam Sessions",
-				"Description": "Adds new blueprint functions to handle more advanced session operations in Steam. REQUIRES ADVANCED SESSIONS",
-				"Category": "Advanced Sessions Plugin",
-				"CreatedBy": "Joshua Statzer",
-				"CreatedByURL": "N/A",
-				"DocsURL": "",
-				"MarketplaceURL": "",
-				"SupportURL": "",
-				"CanContainContent": false,
-				"Modules": [
-					{
-						"Name": "AdvancedSteamSessions",
-						"Type": "Runtime",
-						"LoadingPhase": "Default"
-					}
-				],
-				"Plugins": [
-					{
-						"Name": "AdvancedSessions",
-						"Enabled": true
-					},
-					{
-						"Name": "OnlineSubsystem",
-						"Enabled": true
-					},
-					{
-						"Name": "OnlineSubsystemUtils",
-						"Enabled": true
-					},
-					{
-						"Name": "SteamShared",
 						"Enabled": true
 					}
 				]
