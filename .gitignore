@@ -81,3 +81,7 @@ Build/Windows/FileOpenOrder/EditorOpenOrder.log
 Build/Windows/FileOpenOrder/CookerOpenOrder.log
 *.log
 Intermediate/CachedAssetRegistry_0.bin
+Build/Windows/FileOpenOrder/CookerOpenOrder.log
+Build/Windows/FileOpenOrder/EditorOpenOrder.log
+Content/Blueprints/BP_PlayerController.uasset
+Intermediate/CachedAssetRegistry_0.bin
